@@ -18,13 +18,15 @@ This repository contains a Python implementation of a grammar analysis and parsi
 ---
 
 ## 📝 Grammar Format
-
+* The grammar follows the format: `NonTerminal -> production1 | production2 ...`.
 * Each production must be on a **separate line**
 * Use `->` for production rules
 * Separate productions of a non-terminal with `|`
 * Use `epi` to denote **epsilon** (empty string)
 * Only **uppercase** symbols are **non-terminals**, everything else is **terminal**
 * The **first production** defines the **start symbol**
+* Place the grammer in `grammar_string` variable in RR_PARSER.py
+* `input.txt` iss used to test the grammer on multiple string inputs
 
 ### Example:
 
@@ -111,5 +113,5 @@ Test Case 3: id $
 3. Run the parser:
 
 ```bash
-python parser.py
+python RR_PARSER.py
 ```
